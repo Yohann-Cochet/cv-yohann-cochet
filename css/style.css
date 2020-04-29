@@ -1,0 +1,84 @@
+* {
+    margin      : 0;
+    padding     : 0;
+    box-sizing  : border-box;
+    font-family : 'Metropolis';
+    
+}
+
+p {
+    font-size: 1em;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.fullScreen {
+    height: 100vh;
+}
+
+.bg-blueGreen {
+    background-color: #007180;
+}
+
+.blueGreen {
+    color : #007180;
+}
+
+.darkBlue {
+    color : #161B20;
+}
+
+.title {
+    font-weight     : bold;
+    font-size       : 1.25em;
+    letter-spacing  : 0.20em;
+}
+
+.important {
+    font-size: 1.25em;
+}
+
+.fat-border {
+    border: 1px ridge #161B20;
+}
+
+.download-cv {
+    border: 1px solid #007180;
+    padding: 0.75em;
+    background-color: white;
+}
+
+/* ACCORDION */
+h4.accordeon {
+    /* DESIGN */
+    color: white;
+    cursor: pointer;
+    padding: 0.5em;
+    transition : 0.2s linear;
+}
+
+h4.accordeon::after {
+    /* DESIGN */
+    content : '▼';
+}
+
+h4.accordeon.is-open::after {
+    /* DESIGN */
+    content : '▲';
+}
+
+h4.accordeon:hover {
+    /* DESIGN */
+    color: #161B20;
+}
+
+.accordeon-content {
+    /* DESIGN */
+
+    /* HIDE AND SHOW */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
