@@ -1,34 +1,63 @@
 * {
-    margin      : 0;
-    padding     : 0;
-    box-sizing  : border-box;
-    font-family : 'Metropolis';
-    
+    margin          : 0;
+    padding         : 0;
+    box-sizing      : border-box;
+    font-family     : 'Metropolis';
+    scroll-behavior : smooth;
 }
 
 p {
-    font-size: 1em;
+    font-size : 1em;
 }
 
 body {
-    scroll-behavior: smooth;
+    scroll-behavior : smooth;
 }
 
 .fullScreen {
-    height: 100vh;
+    height : 100vh;
 }
 
 .bg-blueGreen {
-    background-color: #007180;
+    background-color : #007F89;
+}
+
+.bg-darkBlue {
+    background-color : #161B20;
 }
 
 .blueGreen {
-    color : #007180;
+    color : #007F89;
 }
 
 .darkBlue {
     color : #161B20;
 }
+
+.relative {
+    position : relative;
+}
+
+.absolute1 {
+    position    : absolute;
+    top         : 50%;
+    left        : 95%;
+    transform   : translate(0%,-50%);
+}
+
+.absolute2 {
+    position    : absolute;
+    left        : 50%;
+    transform   : translate(-50%,-50%);
+}
+
+.absolute3 {
+    position    : absolute;
+    top         : 0.35em;
+    left        : 50%;
+    transform   : translate(-50%, -50%);
+}
+
 
 .title {
     font-weight     : bold;
@@ -37,26 +66,103 @@ body {
 }
 
 .important {
-    font-size: 1.25em;
+    font-size : 1.25em;
 }
 
-.fat-border {
-    border: 1px ridge #161B20;
+
+
+
+
+/* MINI MENU */
+.mini-menu {
+    position : fixed;
 }
 
+.menu-item1 {
+    height          : 0.25em;
+    width           : 0.25em;
+    border-radius   : 100%;
+    margin          : 20px 0;
+    transition      : all 0.2s ease-in-out;
+}
+
+.menu-item2 {
+    height          : 0.25em;
+    width           : 0.25em;
+    border-radius   : 100%;
+    margin          : 20px 0;
+    transition      : all 0.2s ease-in-out;
+}
+
+.menu-item3 {
+    height          : 0.25em;
+    width           : 0.25em;
+    border-radius   : 100%;
+    margin          : 20px 0;
+    transition      : all 0.2s ease-in-out;
+}
+
+/* ITEM MENU HOVER */
+.menu-item1:hover {
+    transform : scale(2);
+}
+
+.menu-item2:hover {
+    transform : scale(2);
+}
+
+.menu-item3:hover {
+    transform : scale(2);
+}
+
+/* ITEM MENU ACTIVE */
+.menu-item1.active {
+    transform: scale(3);
+    transition      : all 0.2s ease-in-out;
+}
+
+.menu-item2.active {
+    transform: scale(3);
+    transition      : all 0.2s ease-in-out;
+}
+
+.menu-item3.active {
+    transform: scale(3);
+    transition      : all 0.2s ease-in-out;
+}
+
+
+
+
+
+/* 1RST SLIDE */
 .download-cv {
-    border: 1px solid #007180;
-    padding: 0.75em;
-    background-color: white;
+    border              : 1px solid #161B20;
+    padding             : 0.75em;
+    background-color    : white;
+    color               : #161B20;
+    transition          : all 0.2s ease-in-out;
 }
 
+.download-cv:hover {
+    border              : 1px solid #007F89;
+    background-color    : #007F89;
+    color               : white;
+    transition          : all 0.2s ease-in-out;
+}
+
+
+
+
+
+/* 2NDE SLIDE */
 /* ACCORDION */
 h4.accordeon {
     /* DESIGN */
-    color: white;
-    cursor: pointer;
-    padding: 0.5em;
-    transition : 0.2s linear;
+    color       : white;
+    cursor      : pointer;
+    padding     : 0.5em;
+    transition  : 0.2s linear;
 }
 
 h4.accordeon::after {
@@ -71,14 +177,29 @@ h4.accordeon.is-open::after {
 
 h4.accordeon:hover {
     /* DESIGN */
-    color: #161B20;
+    color : #007F89;
 }
 
 .accordeon-content {
     /* DESIGN */
-
+    
     /* HIDE AND SHOW */
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+    max-height      : 0;
+    overflow        : hidden;
+    transition      : max-height 0.2s ease-out;
+}
+
+
+
+
+
+/* PICTOS */
+img.picto {
+    transform   : scale(1);
+    transition  : all 0.2s ease-in-out;
+}
+
+img.picto:hover {
+    transform: translate(0, -5%) scale(1.1);
+    transition  : all 0.2s ease-in-out;
 }
