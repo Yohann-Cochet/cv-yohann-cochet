@@ -10,8 +10,8 @@ p {
     font-size : 1em;
 }
 
-body {
-    scroll-behavior : smooth;
+.z-index {
+    z-index: 10;
 }
 
 .fullScreen {
