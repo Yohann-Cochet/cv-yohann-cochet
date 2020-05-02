@@ -200,6 +200,17 @@ img.picto {
 }
 
 img.picto:hover {
-    transform: translate(0, -5%) scale(1.1);
+    transform   : translate(0, -5%) scale(1.1);
     transition  : all 0.2s ease-in-out;
+}
+
+
+
+
+
+/* RESPONSIVE */
+@media screen and (max-width:960px) {
+    .symbole {
+        transform: scale(0.75);
+    }
 }
