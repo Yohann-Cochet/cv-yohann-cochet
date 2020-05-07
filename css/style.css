@@ -146,8 +146,7 @@ p {
 
 .download-cv:hover {
     border              : 1px solid #007F89;
-    background-color    : #007F89;
-    color               : white;
+    color               : #007F89;
     transition          : all 0.2s ease-in-out;
 }
 
@@ -212,5 +211,20 @@ img.picto:hover {
 @media screen and (max-width:960px) {
     .symbole {
         transform: scale(0.75);
+    }
+
+    .img-accordeon {
+        overflow-x: scroll;
+    }
+
+    img.picto:hover {
+        transform   : scale(1);
+        transition  : all 0.2s ease-in-out;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .fullScreen {
+        min-height: 900px;
     }
 }
